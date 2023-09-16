@@ -1,0 +1,18 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin menu-bajo {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+@mixin alineación-texto {
+  text-align: center;
+  padding: 1rem;
+}
