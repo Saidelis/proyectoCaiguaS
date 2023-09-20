@@ -1,9 +1,19 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (min-width: 768px) {
   main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
   }
+}
+form {
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  padding: 1rem 2.5rem;
+  background-color: $color-principal;
+  border-radius: 20px;
+  box-shadow: 0 0 20px $color-secundario;
+  width: 340px;
+  margin-bottom: 1rem;
 }

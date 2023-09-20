@@ -4,19 +4,18 @@
   box-sizing: border-box;
 }
 
-body main {
+section, body main {
   margin-left: 2rem;
   margin-right: 2rem;
 }
 
-body main {
+section, body main {
   margin-left: 2rem;
   margin-right: 2rem;
 }
 
 body {
   background-image: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
-  min-height: 100vh;
   font-family: "Roboto", sans-serif;
   color: white;
 }
@@ -68,6 +67,10 @@ header nav .nav-link:hover {
   padding: 1rem;
 }
 
+.spotify-bebe {
+  margin-top: 1rem;
+}
+
 section {
   text-align: center;
   padding: 1rem;
@@ -82,24 +85,27 @@ section div ul {
   flex-direction: row;
   list-style: none;
   gap: 1rem;
+  font-size: 1.2rem;
 }
 section div ul .verde {
   background-color: green;
   width: 200px;
   height: 200px;
   text-align: center;
-  padding: 30px 20px;
+  padding: 20px;
   border-radius: 5px;
   margin-bottom: 10px;
+  margin-right: 1rem;
 }
 section div ul .violeta {
   background-color: green;
   width: 200px;
   height: 200px;
   text-align: center;
-  padding: 30px 20px;
+  padding: 20px;
   border-radius: 5px;
   margin-bottom: 10px;
+  margin-right: 1rem;
   background-color: rgba(238, 130, 238, 0.822);
 }
 section div ul .amarillo {
@@ -107,19 +113,21 @@ section div ul .amarillo {
   width: 200px;
   height: 200px;
   text-align: center;
-  padding: 30px 20px;
+  padding: 20px;
   border-radius: 5px;
   margin-bottom: 10px;
-  background-color: rgba(255, 255, 0, 0.767);
+  margin-right: 1rem;
+  background-color: rgba(255, 255, 0, 0.8549019608);
 }
 section div ul .azul {
   background-color: green;
   width: 200px;
   height: 200px;
   text-align: center;
-  padding: 30px 20px;
+  padding: 20px;
   border-radius: 5px;
   margin-bottom: 10px;
+  margin-right: 1rem;
   background-color: rgba(0, 0, 255, 0.863);
 }
 section li {
@@ -127,17 +135,17 @@ section li {
 }
 section a {
   text-decoration: none;
-  color: white;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-  padding: 30px;
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1rem;
 }
-.grid-container img {
-  max-width: 100%;
+.flex-container img {
+  width: 100%;
   height: 100%;
   border-radius: 10px;
 }
@@ -203,109 +211,91 @@ footer {
   display: flex;
   justify-content: center;
   text-align: center;
+  padding-top: 1rem;
   font-size: 1rem;
-  height: 15vh;
+  height: 15%;
 }
 
-@media screen and (min-width: 375px) and (max-width: 480px) {
+@media screen and (min-width: 320px) {
   main img {
     display: flex;
-    width: 100%;
     justify-content: center;
+    width: 100%;
+    max-width: 400px;
   }
-  form {
+  main .trimestres {
+    width: 700px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 2%;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  main .trimestres .trimestres iframe {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  main form {
     padding: 30px;
     width: 100%;
     align-items: center;
     margin-bottom: 10px;
   }
+  section {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  section div {
+    text-decoration: none;
+  }
+  section div ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1rem;
+  }
+  section div li {
+    align-items: center;
+  }
+  section div a {
+    text-decoration: none;
+    color: black;
+  }
 }
-section {
-  text-align: center;
-  padding: 1rem;
-  font-size: 1rem;
-}
-section div {
-  text-decoration: none;
-}
-section div ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style: none;
-  gap: 1rem;
-}
-section div ul .verde {
-  background-color: green;
-  width: 200px;
-  height: 200px;
-  text-align: center;
-  padding: 30px 20px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-section div ul .violeta {
-  background-color: green;
-  width: 200px;
-  height: 200px;
-  text-align: center;
-  padding: 30px 20px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  background-color: rgba(238, 130, 238, 0.822);
-}
-section div ul .amarillo {
-  background-color: green;
-  width: 200px;
-  height: 200px;
-  text-align: center;
-  padding: 30px 20px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  background-color: rgba(255, 255, 0, 0.767);
-}
-section div ul .azul {
-  background-color: green;
-  width: 200px;
-  height: 200px;
-  text-align: center;
-  padding: 30px 20px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  background-color: rgba(0, 0, 255, 0.863);
-}
-section li {
-  align-items: center;
-}
-section a {
-  text-decoration: none;
-  color: white;
-}
-
-main .grid-container {
-  display: grid;
-}
-
 @media screen and (min-width: 1024px) {
   body {
     align-items: center;
   }
-  main {
+  main form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 340px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (min-width: 768px) {
   main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
   }
+}
+form {
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  padding: 1rem 2.5rem;
+  background-color: rgba(74, 8, 104, 0.8980392157);
+  border-radius: 20px;
+  box-shadow: 0 0 20px white;
+  width: 340px;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

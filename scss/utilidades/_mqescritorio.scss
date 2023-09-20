@@ -3,10 +3,12 @@
     align-items: center;
   }
   main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 340px;
+    }
   }
 }
